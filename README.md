@@ -1,7 +1,21 @@
 # chatgpt-exec
 Interact with ChatGPT in Python terminal.
 
-# Usage
+Until an official API is released, it relies on [mmabrouk/chatgpt-wrapper](https://github.com/mmabrouk/chatgpt-wrapper).
+
+## Installation
+```sh
+git clone https://github.com/vilimus/chatgpt-exec.git
+cd chatgpt-exec
+pip install -r requirements.txt
+```
+
+## Usage
+
+```sh
+python chatgpt.py
+```
+
 It is a standard back-and-forth interaction with ChatGPT, with three special commands:
 - `q`/`quit` to quit
 - `s`/`save` to save the current conversation
@@ -9,3 +23,7 @@ It is a standard back-and-forth interaction with ChatGPT, with three special com
   - note: this assumes ChatGPT printed ONE code chunk. If it printed multiple code chunks, just ask nicely for it to combine them!
   
 Once a code chunk is executed, the results can be referenced via the keyword `<RESULT>`.
+
+## Tips
+
+ChatGPT likes to remind you that it cannot access the internet or execute code. Just kindly remind it that you are not asking it to do so, you are simply asking it to write code!
