@@ -1,5 +1,5 @@
 # chatgpt-exec
-Interact with ChatGPT in terminal
+Interact with ChatGPT in Python terminal.
 
 # Usage
 It is a standard back-and-forth interaction with ChatGPT, with three special commands:
