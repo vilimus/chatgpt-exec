@@ -1,5 +1,5 @@
 # chatgpt-exec
-Interact with ChatGPT in Python terminal.
+Interact with ChatGPT in a Python terminal.
 
 Until an official API is released, it relies on [mmabrouk/chatgpt-wrapper](https://github.com/mmabrouk/chatgpt-wrapper).
 
