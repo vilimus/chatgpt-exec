@@ -3,9 +3,13 @@ import re
 import sys
 import traceback
 
-from chatgpt_wrapper import ChatGPT 
+from chatgpt.api import ChatGPT 
 
-chatgpt = ChatGPT()
+with open("chatgpt_session_token.txt", "r") as f:
+  session_token = f.read()
+  
+chat = ChatGPT(session_token=session_token)
+chat.authenticate()
 
 response = str()
 result = str()
@@ -50,5 +54,8 @@ while not done:
       
   else:
     m = m.replace("<RESULT>", result)
-    response = chatgpt.ask(m)
-    print(f"\nChatGPT: {response}\n")
+    try:
+      response = chatgpt.send_message(m).content
+      print(f"\nChatGPT: {response}\n")
+    except:
+      print("Timeout")
