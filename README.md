@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ## Usage
 
 ```sh
-python chatgpt.py
+python chat.py
 ```
 
 It is a standard back-and-forth interaction with ChatGPT, with three special commands:
